@@ -1,12 +1,8 @@
-document.addEventListener("mousemove", function(e) {
-    console.log("Mouse X:", e.clientX);
+const button = document.createElement("button");
+button.innerText = "Click Me";
+
+button.addEventListener("click", () => {
+    alert("JS created this UI!");
 });
 
-document.body.addEventListener("click", function() {
-    document.body.style.backgroundColor = "black";
-});
-
-document.getElementById("btn").addEventListener("click", function() {
-    alert("You clicked the button!");
-
-});
+document.body.appendChild(button);
